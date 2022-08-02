@@ -1,0 +1,22 @@
+{
+  "name": "issuelist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "compile": "babel src --presets @babel/react --out-dir public",
+    "watch": "npx babel --watch ./UI/src --presets @babel/react --out-dir ./UI/public --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.8.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16"
+  }
+}
